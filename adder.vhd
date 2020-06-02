@@ -5,10 +5,10 @@ use ieee.std_logic_unsigned.all;
 
 entity adder is 
 generic (n: natural :=2);
-port( A: in std_logic_vector(n-1 downto 0);
-     B: in std_logic_vector(n-1 downto 0);
-     carry: out std_logic;
-     sum: out std_logic_vector(n-1 downto 0);
+port( A:     in std_logic_vector(n-1 downto 0);
+      B:     in std_logic_vector(n-1 downto 0);
+      carry: out std_logic;
+      sum:   out std_logic_vector(n-1 downto 0)
 );
 end adder;
 
