@@ -6,7 +6,7 @@ port(	x in std_logic;
 	y in std_logic;
 	z out std_logic
 );
-end entity;
+end xor_gate;
 
 architecture arch of xor_gate is 
 begin
