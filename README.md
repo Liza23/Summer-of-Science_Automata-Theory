@@ -1,0 +1,1 @@
+This repository contains the code written for implementation of digital circuits and is for the reading project on Automata theory under Summer of Science, conducted by Math & Physics Club, IIT Bombay.
