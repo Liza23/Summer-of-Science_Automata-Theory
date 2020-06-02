@@ -23,5 +23,5 @@ end arch;
 
 architecture beh of nor_gate is
 begin
-	z <='x' nor 'y'
+	z <= x nor y
 end beh
