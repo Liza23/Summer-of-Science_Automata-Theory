@@ -23,5 +23,5 @@ end arch;
 
 architecture beh of or_gate is
 begin
-	z <='x' or 'y'
+	z <= x or y
 end beh
