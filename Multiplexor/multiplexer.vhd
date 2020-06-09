@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-enitity multiplexor is
+entity multiplexer is
 port( I3:   in std_logic_vector(2 downto 0)
       I2:   in std_logic_vector(2 downto 0)
       I1:   in std_logic_vector(2 downto 0)
@@ -9,9 +9,9 @@ port( I3:   in std_logic_vector(2 downto 0)
       S:    in std_logic_vector(1 downto 0)
       O:    out std_logic_vector(2 downto 0)
 );
-end multiplexor;
+end multiplexer;
 
-architecture beh1 of multiplexor is
+architecture beh1 of multiplexer is
 begin 
   process(I3,I2,I1,I0,S)
   begin
@@ -26,7 +26,7 @@ begin
   end process;
 end beh1;
 
-architecture beh2 of multiplexor is
+architecture beh2 of multiplexer is
 begin
   O <=    I0 when S = "00" else
           I1 when S = "01" else
