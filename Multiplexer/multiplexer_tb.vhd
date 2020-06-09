@@ -2,11 +2,11 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 
-entity multiplexor_tb is			
+entity multiplexer_tb is			
 -- empty entity
-end multiplexor_tb;
+end multiplexer_tb;
 
-architecture testbench of multiplexor_tb is
+architecture testbench of multiplexer_tb is
 
     -- initialize the declared signals  
     signal T_I3: std_logic_vector(2 downto 0):="000"; 
@@ -16,7 +16,7 @@ architecture testbench of multiplexor_tb is
     signal T_O: std_logic_vector(2 downto 0);
     signal T_S: std_logic_vector(1 downto 0);
 	
-    component multiplexor_tb
+    component multiplexer_tb
     port(	I3: 	in std_logic_vector(2 downto 0);
 		I2: 	in std_logic_vector(2 downto 0);
 		I1: 	in std_logic_vector(2 downto 0);
@@ -28,7 +28,7 @@ architecture testbench of multiplexor_tb is
 
 begin
 
-    U_Mux: multiplexor port map (T_I3, T_I2, T_I1, T_I0, T_S, T_O);
+    U_Mux: multiplexer port map (T_I3, T_I2, T_I1, T_I0, T_S, T_O);
 	
     process							
 	
@@ -98,7 +98,7 @@ begin
 
 end testbench;
 
-configuration config of multiplexor_tb is
+configuration config of multiplexer_tb is
 	for testbench
 	end for;
 end config;
